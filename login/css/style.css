@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body:has(#loginFormtwo) {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.071),
+      rgba(0, 0, 0, 0.864)
+    ),
+    url(../img/351.jpg);
+
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  animation: moveSky 50s linear infinite;
+}
+
+.fa-user {
+  font-size: 50px;
+  margin-top: 35px;
+
+  padding: 20px;
+  border-radius: 50%;
+  color: white;
+}
+
+form {
+  margin-top: 90px;
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(247, 244, 244, 0.318);
+  border-radius: 1rem;
+  box-shadow: -5px 2px 15px -9px rgb(216, 207, 207);
+  backdrop-filter: blur(5px);
+}
+
+@keyframes moveSky {
+  0% {
+    background-position: 0% 50%;
+  }
+  10% {
+    background-position: 8% 25%;
+  }
+  20% {
+    background-position: 25% 15%;
+  }
+  30% {
+    background-position: 50% 8%;
+  }
+  40% {
+    background-position: 75% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  60% {
+    background-position: 88% 50%;
+  }
+  70% {
+    background-position: 75% 32%;
+  }
+  80% {
+    background-position: 50% 8%;
+  }
+  90% {
+    background-position: 25% 15%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
